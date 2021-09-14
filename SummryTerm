@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import javax.swing.*;
+import java.awt.*;    
+
+/**
+ *
+ * @author Mhmd
+ */
+public class SummryTerm extends JFrame {
+
+    public SummryTerm(){
+        setLayout(new FlowLayout());
+        //Labels
+        JLabel l1=new JLabel("Summry term");
+         JLabel l2=new JLabel("Select Deprment");
+          JLabel l3=new JLabel("Slect the Coures");
+           JLabel l4=new JLabel("Student ID");
+           //check box
+           JCheckBox c1= new JCheckBox("Java");
+           JCheckBox c2= new JCheckBox("EC 2");
+           JCheckBox c3= new JCheckBox("Math");
+           //JComboBox
+           JComboBox jb1=new JComboBox();
+           jb1.addItem("CNET");
+           jb1.addItem("CS");
+           jb1.addItem("IT");
+           //buttons 
+           JButton b1=new JButton("Insert");
+           //Text Field
+           JTextField t1=new JTextField(20);
+           
+            // add
+           add(l1);
+            add(l2);
+             add(jb1);
+             add(l3);
+             add(c1);
+              add(c2);
+               add(c3);
+                add(l4);
+                 add(t1);
+                 add(b1);
+             
+             
+    }
+
+   public static void main(String[] args) {
+SummryTerm S1= new SummryTerm();
+S1.setSize(430,210);
+S1.setVisible(true);
+S1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+}
+
+}
