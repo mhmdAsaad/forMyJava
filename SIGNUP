@@ -1,0 +1,61 @@
+
+import javax.swing.*;
+import java.awt.*;    
+
+/**
+ *
+ * @author Mhmd
+ */
+public class SIGNUP extends JFrame {
+
+    public SIGNUP(){
+        setLayout(new FlowLayout());
+        //Labels
+        JLabel l1=new JLabel("SIGN UP");
+         JLabel l2=new JLabel("Name :");
+          JLabel l3=new JLabel("Email :");
+           JLabel l4=new JLabel("Passowrd : ");
+           JLabel l5=new JLabel("Select Type :");
+           
+           //check box
+           JCheckBox chb1= new JCheckBox("Privacy Policy");
+           JCheckBox chb2= new JCheckBox("Terms and Conditions");
+          
+           //JComboBox
+           JComboBox jcb1=new JComboBox();
+           jcb1.addItem("Student");
+           jcb1.addItem("Teacher");
+           jcb1.addItem("Employer");
+           //buttons 
+           JButton b1=new JButton("SIGN UP");
+           //Text Field
+           JTextField t1=new JTextField(30);
+           JTextField t2=new JTextField(30);
+           JTextField t3=new JTextField(30);
+           
+           
+            // add
+           add(l1);
+            add(l2);
+             add(t1);
+             add(l3);
+             add(t2);
+                add(l4);
+               add(t3);
+                add(l5);
+                 add(jcb1);
+                 add(chb1);
+                 add(chb2);
+                 add(b1);
+             
+             
+    }
+
+   public static void main(String[] args) {
+SIGNUP S1= new SIGNUP();
+S1.setSize(430,210);
+S1.setVisible(true);
+S1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+}
+
+}
